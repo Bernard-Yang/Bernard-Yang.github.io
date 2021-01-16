@@ -318,7 +318,7 @@
                 
               
 
-              <time title="Erstellt: 2021-01-16 16:20:29 / Geändert am: 16:21:43" itemprop="dateCreated datePublished" datetime="2021-01-16T16:20:29+00:00">2021-01-16</time>
+              <time title="Erstellt: 2021-01-16 16:20:29 / Geändert am: 16:25:15" itemprop="dateCreated datePublished" datetime="2021-01-16T16:20:29+00:00">2021-01-16</time>
             </span>
           
 
@@ -368,175 +368,11 @@
 <p>assume observations are drawn independently from $p(x \mid \mu)$, so that</p>
 <script type="math/tex; mode=display">p(\mathcal{D} \mid \mu)=\prod_{n=1}^{N} p\left(x_{n} \mid \mu\right)=\prod_{n=1}^{N} \mu^{x_{n}}(1-\mu)^{1-x_{n}}</script><p>In frequentist setting, log liklyhood fuction of Bernoulli distribution is given by</p>
 <script type="math/tex; mode=display">\ln p(\mathcal{D} \mid \mu)=\sum_{n=1}^{N} \ln p(x_{n} \mid \mu)=\sum_{n=1}^{N}\left\{x_{n} \ln \mu+\left(1-x_{n}\right) \ln (1-\mu)\right\}</script><p>Set derivative of $\ln p(\mathcal{D} \mid \mu)$ with respect to $\mu$ equal to zero, obtained the maximum likelihood estimator</p>
-<script type="math/tex; mode=display">\mu_{ML} = \frac{1}{N}\sum_{n=1}^{N}x_{n}</script><p># 2.2 Multinomial Variables</p>
-<p>A variable that take $K=6$ states and a particular observation of the variable happens to correspond to the state where $x_{3}=1$, then x will be represented by</p>
-<script type="math/tex; mode=display">\bold{x}=(0,0, 1, 0, \ldots, 0)^{T}</script><p>Such vectors satisfy $\sum_{k=1}^{K}x_{k}=1$.</p>
-<p>Denote the probability of $x_{k}=1$ by the parameter $\mu_{k}$, the distribution of $\bold{x}$ is given</p>
-<script type="math/tex; mode=display">p(\bold{x} \mid \boldsymbol{\mu}) = \prod_{k=1}^{K}\mu_{k}^{x_{k}}</script><p>where $\boldsymbol{\mu} = (\mu_1, \ldots, \mu_{K})$, $\mu_{k}$ are considered to satisfy $\mu_{k}\geq 0$ and $\sum_{k} \mu_{k} = 1$ since they represent probabilities.</p>
-<p>The distribution $p(\bold{x} \mid \boldsymbol{\mu}) = \prod_{k=1}^{K}\mu_{k}^{x_{k}}$ can be regarded as a genealization of the Bernoulli distribution to more than two outcomes.</p>
-<p>Normalized</p>
-<script type="math/tex; mode=display">\sum_{\mathbf{x}} p(\mathbf{x} \mid \boldsymbol{\mu})=\sum_{k=1}^{K} \mu_{k}=1</script><p>Now consider a data set $\mathcal{D} of N independent observations $\mathbf{x_{1}}, \ldots, \mathbf{x_{N}}$. Likelihood function</p>
-<script type="math/tex; mode=display">p(\mathcal{D} \mid \boldsymbol{\mu})=\prod_{n=1}^{N} \prod_{k=1}^{K} \mu_{k}^{x_{n k}}=\prod_{k=1}^{K} \mu_{k}^{\left(\sum_{n} x_{n k}\right)}=\prod_{k=1}^{K} \mu_{k}^{m_{k}}</script><p>Set derivative of $\ln p(\mathcal{D} \mid \boldsymbol{\mu})$ with respect to $\mu_k$ taking account of the constraint that the $\mu_k$ must sum to one. This can be achieved by using a Lagrange multiplier $\lambda$ and maximizing</p>
-<script type="math/tex; mode=display">\sum_{k=1}^{K} m_k \ln \mu_k + \lambda (\sum_{k=1}^{K}\mu_k-1)</script><p>Setting the derivative with respect to $\mu_k$ to zero, we obtain</p>
-<script type="math/tex; mode=display">\mu_k = -m_k /\lambda</script><script type="math/tex; mode=display">\sum_k \mu_k = 1</script><script type="math/tex; mode=display">\sum_k-m_k /\lambda = 1</script><script type="math/tex; mode=display">\sum_k\sum_{n} x_{n k}/\lambda = 1</script><script type="math/tex; mode=display">\lambda = -N</script><p>Obtain the maximum likelihood solution in the form</p>
-<script type="math/tex; mode=display">\mu_k^{ML} = \frac{m_k}{N}</script><p>Which is the fraction of the N observations for which $\mathcal{x_k} = 1$</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/01/16/PRML 2.1-2.2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="BY">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Bernard_Yang">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2021/01/16/PRML 2.1-2.2/" class="post-title-link" itemprop="url">Unbenannt</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-
-              
-                
-              
-
-              <time title="Erstellt: 2021-01-16 13:00:18" itemprop="dateCreated datePublished" datetime="2021-01-16T13:00:18+00:00">2021-01-16</time>
-            </span>
-          
-
-          
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <hr>
-<p>title: PRML_2.1-2.2<br>date: 2021-1-16 13:00:00<br>tags:</p>
-<h2 id="mathjax-true"><a href="#mathjax-true" class="headerlink" title="mathjax: true"></a>mathjax: true</h2><h1 id="2-1-Binary-Variables"><a href="#2-1-Binary-Variables" class="headerlink" title="2.1 Binary Variables"></a>2.1 Binary Variables</h1><script type="math/tex; mode=display">p(x=1 \mid \mu)=\mu</script><script type="math/tex; mode=display">\operatorname{Bern}(x \mid \mu)=\mu^{x}(1-\mu)^{1-x}</script><script type="math/tex; mode=display">\operatorname{E}[x]=\mu</script><script type="math/tex; mode=display">\operatorname{Var}[x]=\mu(1-\mu)</script><p>data set $\mathcal{D} = {x_{1}, \ldots, x_{N}}$</p>
-<p>assume observations are drawn independently from $p(x \mid \mu)$, so that</p>
-<script type="math/tex; mode=display">p(\mathcal{D} \mid \mu)=\prod_{n=1}^{N} p\left(x_{n} \mid \mu\right)=\prod_{n=1}^{N} \mu^{x_{n}}(1-\mu)^{1-x_{n}}</script><p>In frequentist setting, log liklyhood fuction of Bernoulli distribution is given by</p>
-<script type="math/tex; mode=display">\ln p(\mathcal{D} \mid \mu)=\sum_{n=1}^{N} \ln p(x_{n} \mid \mu)=\sum_{n=1}^{N}\left\{x_{n} \ln \mu+\left(1-x_{n}\right) \ln (1-\mu)\right\}</script><p>Set derivative of $\ln p(\mathcal{D} \mid \mu)$ with respect to $\mu$ equal to zero, obtained the maximum likelihood estimator</p>
-<script type="math/tex; mode=display">\mu_{ML} = \frac{1}{N}\sum_{n=1}^{N}x_{n}</script><p># 2.2 Multinomial Variables</p>
-<p>A variable that take $K=6$ states and a particular observation of the variable happens to correspond to the state where $x_{3}=1$, then x will be represented by</p>
-<script type="math/tex; mode=display">\bold{x}=(0,0, 1, 0, \ldots, 0)^{T}</script><p>Such vectors satisfy $\sum_{k=1}^{K}x_{k}=1$.</p>
-<p>Denote the probability of $x_{k}=1$ by the parameter $\mu_{k}$, the distribution of $\bold{x}$ is given</p>
-<script type="math/tex; mode=display">p(\bold{x} \mid \boldsymbol{\mu}) = \prod_{k=1}^{K}\mu_{k}^{x_{k}}</script><p>where $\boldsymbol{\mu} = (\mu_1, \ldots, \mu_{K})$, $\mu_{k}$ are considered to satisfy $\mu_{k}\geq 0$ and $\sum_{k} \mu_{k} = 1$ since they represent probabilities.</p>
-<p>The distribution $p(\bold{x} \mid \boldsymbol{\mu}) = \prod_{k=1}^{K}\mu_{k}^{x_{k}}$ can be regarded as a genealization of the Bernoulli distribution to more than two outcomes.</p>
+<script type="math/tex; mode=display">\mu_{ML} = \frac{1}{N}\sum_{n=1}^{N}x_{n}</script><h1 id="2-2-Multinomial-Variables"><a href="#2-2-Multinomial-Variables" class="headerlink" title="2.2 Multinomial Variables"></a>2.2 Multinomial Variables</h1><p>A variable that take $K=6$ states and a particular observation of the variable happens to correspond to the state where $x_{3}=1$, then x will be represented by</p>
+<script type="math/tex; mode=display">\boldsymbol{x}=(0,0, 1, 0, \ldots, 0)^{T}</script><p>Such vectors satisfy $\sum_{k=1}^{K}x_{k}=1$.</p>
+<p>Denote the probability of $x_{k}=1$ by the parameter $\mu_{k}$, the distribution of $\boldsymbol{x}$ is given</p>
+<script type="math/tex; mode=display">p(\boldsymbol{x} \mid \boldsymbol{\mu}) = \prod_{k=1}^{K}\mu_{k}^{x_{k}}</script><p>where $\boldsymbol{\mu} = (\mu_1, \ldots, \mu_{K})$, $\mu_{k}$ are considered to satisfy $\mu_{k}\geq 0$ and $\sum_{k} \mu_{k} = 1$ since they represent probabilities.</p>
+<p>The distribution $p(\boldsymbol{x} \mid \boldsymbol{\mu}) = \prod_{k=1}^{K}\mu_{k}^{x_{k}}$ can be regarded as a genealization of the Bernoulli distribution to more than two outcomes.</p>
 <p>Normalized</p>
 <script type="math/tex; mode=display">\sum_{\mathbf{x}} p(\mathbf{x} \mid \boldsymbol{\mu})=\sum_{k=1}^{K} \mu_{k}=1</script><p>Now consider a data set $\mathcal{D} of N independent observations $\mathbf{x_{1}}, \ldots, \mathbf{x_{N}}$. Likelihood function</p>
 <script type="math/tex; mode=display">p(\mathcal{D} \mid \boldsymbol{\mu})=\prod_{n=1}^{N} \prod_{k=1}^{K} \mu_{k}^{x_{n k}}=\prod_{k=1}^{K} \mu_{k}^{\left(\sum_{n} x_{n k}\right)}=\prod_{k=1}^{K} \mu_{k}^{m_{k}}</script><p>Set derivative of $\ln p(\mathcal{D} \mid \boldsymbol{\mu})$ with respect to $\mu_k$ taking account of the constraint that the $\mu_k$ must sum to one. This can be achieved by using a Lagrange multiplier $\lambda$ and maximizing</p>
@@ -788,7 +624,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">Artikel</span>
                   </a>
                 </div>
@@ -971,8 +807,6 @@
     
       
         
-      
-    
       
     
       

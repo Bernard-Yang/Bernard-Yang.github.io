@@ -15,19 +15,20 @@
             <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
         
     
-    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"BY","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/","https://plus.google.com/","https://www.linkedin.com/profile/","mailto"]},"articleBody":"2.1 Binary Variablesp(x=1 \\mid \\mu)=\\mu\\operatorname{Bern}(x \\mid \\mu)=\\mu^{x}(1-\\mu)^{1-x}\\operatorname{E}[x]=\\mu\\operatorname{Var}[x]=\\mu(1-\\mu)data set $\\mathcal{D} = {x_{1}, \\ldots, x_{N}}$\nassume observations are drawn independently from $p(x \\mid \\mu)$, so that\np(\\mathcal{D} \\mid \\mu)=\\prod_{n=1}^{N} p\\left(x_{n} \\mid \\mu\\right)=\\prod_{n=1}^{N} \\mu^{x_{n}}(1-\\mu)^{1-x_{n}}In frequentist setting, log liklyhood fuction of Bernoulli distribution is given by\n\\ln p(\\mathcal{D} \\mid \\mu)=\\sum_{n=1}^{N} \\ln p(x_{n} \\mid \\mu)=\\sum_{n=1}^{N}\\left\\{x_{n} \\ln \\mu+\\left(1-x_{n}\\right) \\ln (1-\\mu)\\right\\}Set derivative of $\\ln p(\\mathcal{D} \\mid \\mu)$ with respect to $\\mu$ equal to zero, obtained the maximum likelihood estimator\n\\mu_{ML} = \\frac{1}{N}\\sum_{n=1}^{N}x_{n}2.2 Multinomial VariablesA variable that take $K=6$ states and a particular observation of the variable happens to correspond to the state where $x_{3}=1$, then x will be represented by\n\\boldsymbol{x}=(0,0, 1, 0, \\ldots, 0)^{T}Such vectors satisfy $\\sum_{k=1}^{K}x_{k}=1$.\nDenote the probability of $x_{k}=1$ by the parameter $\\mu_{k}$, the distribution of $\\boldsymbol{x}$ is given\np(\\boldsymbol{x} \\mid \\boldsymbol{\\mu}) = \\prod_{k=1}^{K}\\mu_{k}^{x_{k}}where $\\boldsymbol{\\mu} = (\\mu_1, \\ldots, \\mu_{K})$, $\\mu_{k}$ are considered to satisfy $\\mu_{k}\\geq 0$ and $\\sum_{k} \\mu_{k} = 1$ since they represent probabilities.\nThe distribution $p(\\boldsymbol{x} \\mid \\boldsymbol{\\mu}) = \\prod_{k=1}^{K}\\mu_{k}^{x_{k}}$ can be regarded as a genealization of the Bernoulli distribution to more than two outcomes.\nNormalized\n\\sum_{\\mathbf{x}} p(\\mathbf{x} \\mid \\boldsymbol{\\mu})=\\sum_{k=1}^{K} \\mu_{k}=1Now consider a data set $\\mathcal{D} of N independent observations $\\mathbf{x_{1}}, \\ldots, \\mathbf{x_{N}}$. Likelihood function\np(\\mathcal{D} \\mid \\boldsymbol{\\mu})=\\prod_{n=1}^{N} \\prod_{k=1}^{K} \\mu_{k}^{x_{n k}}=\\prod_{k=1}^{K} \\mu_{k}^{\\left(\\sum_{n} x_{n k}\\right)}=\\prod_{k=1}^{K} \\mu_{k}^{m_{k}}Set derivative of $\\ln p(\\mathcal{D} \\mid \\boldsymbol{\\mu})$ with respect to $\\mu_k$ taking account of the constraint that the $\\mu_k$ must sum to one. This can be achieved by using a Lagrange multiplier $\\lambda$ and maximizing\n\\sum_{k=1}^{K} m_k \\ln \\mu_k + \\lambda (\\sum_{k=1}^{K}\\mu_k-1)Setting the derivative with respect to $\\mu_k$ to zero, we obtain\n\\mu_k = -m_k /\\lambda\\sum_k \\mu_k = 1\\sum_k-m_k /\\lambda = 1\\sum_k\\sum_{n} x_{n k}/\\lambda = 1\\lambda = -NObtain the maximum likelihood solution in the form\n\\mu_k^{ML} = \\frac{m_k}{N}Which is the fraction of the N observations for which $\\mathcal{x_k} = 1$\n","dateCreated":"2021-01-16T16:20:29+00:00","dateModified":"2021-01-16T16:41:42+00:00","datePublished":"2021-01-16T16:20:29+00:00","description":"","headline":"PRML_2.1-2.2","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"http://yoursite.com/2021/01/16/PRML-2-1-2-2/"},"publisher":{"@type":"Organization","name":"BY","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/","https://plus.google.com/","https://www.linkedin.com/profile/","mailto"]},"url":"http://yoursite.com/2021/01/16/PRML-2-1-2-2/","keywords":"ML, PRML"}</script>
-    <meta name="description" content="2.1 Binary Variablesp(x=1 \mid \mu)=\mu\operatorname{Bern}(x \mid \mu)=\mu^{x}(1-\mu)^{1-x}\operatorname{E}[x]=\mu\operatorname{Var}[x]=\mu(1-\mu)data set $\mathcal{D} = {x_{1}, \ldots, x_{N}}$ assume">
-<meta name="keywords" content="ML,PRML">
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"BY","sameAs":["https://github.com/Bernard-Yang","https://blog.csdn.net/weixin_38224810?spm=1011.2124.3001.5343","https://www.linkedin.com/in/bohao-yang-6a1372200/"]},"articleBody":"2.1 Binary Variablesp(x=1 \\mid \\mu)=\\mu\\operatorname{Bern}(x \\mid \\mu)=\\mu^{x}(1-\\mu)^{1-x}\\operatorname{E}[x]=\\mu\\operatorname{Var}[x]=\\mu(1-\\mu)data set $\\mathcal{D} = {x_{1}, \\ldots, x_{N}}$\nassume observations are drawn independently from $p(x \\mid \\mu)$, so that\np(\\mathcal{D} \\mid \\mu)=\\prod_{n=1}^{N} p\\left(x_{n} \\mid \\mu\\right)=\\prod_{n=1}^{N} \\mu^{x_{n}}(1-\\mu)^{1-x_{n}}In frequentist setting, log liklyhood fuction of Bernoulli distribution is given by\n\\ln p(\\mathcal{D} \\mid \\mu)=\\sum_{n=1}^{N} \\ln p(x_{n} \\mid \\mu)=\\sum_{n=1}^{N}\\left\\{x_{n} \\ln \\mu+\\left(1-x_{n}\\right) \\ln (1-\\mu)\\right\\}Set derivative of $\\ln p(\\mathcal{D} \\mid \\mu)$ with respect to $\\mu$ equal to zero, obtained the maximum likelihood estimator\n\\mu_{ML} = \\frac{1}{N}\\sum_{n=1}^{N}x_{n}2.2 Multinomial VariablesA variable that take $K=6$ states and a particular observation of the variable happens to correspond to the state where $x_{3}=1$, then x will be represented by\n\\boldsymbol{x}=(0,0, 1, 0, \\ldots, 0)^{T}Such vectors satisfy $\\sum_{k=1}^{K}x_{k}=1$.\nDenote the probability of $x_{k}=1$ by the parameter $\\mu_{k}$, the distribution of $\\boldsymbol{x}$ is given\np(\\boldsymbol{x} \\mid \\boldsymbol{\\mu}) = \\prod_{k=1}^{K}\\mu_{k}^{x_{k}}where $\\boldsymbol{\\mu} = (\\mu_1, \\ldots, \\mu_{K})$, $\\mu_{k}$ are considered to satisfy $\\mu_{k}\\geq 0$ and $\\sum_{k} \\mu_{k} = 1$ since they represent probabilities.\nThe distribution $p(\\boldsymbol{x} \\mid \\boldsymbol{\\mu}) = \\prod_{k=1}^{K}\\mu_{k}^{x_{k}}$ can be regarded as a genealization of the Bernoulli distribution to more than two outcomes.\nNormalized\n\\sum_{\\mathbf{x}} p(\\mathbf{x} \\mid \\boldsymbol{\\mu})=\\sum_{k=1}^{K} \\mu_{k}=1Now consider a data set $\\mathcal{D} of N independent observations $\\mathbf{x_{1}}, \\ldots, \\mathbf{x_{N}}$. Likelihood function\np(\\mathcal{D} \\mid \\boldsymbol{\\mu})=\\prod_{n=1}^{N} \\prod_{k=1}^{K} \\mu_{k}^{x_{n k}}=\\prod_{k=1}^{K} \\mu_{k}^{\\left(\\sum_{n} x_{n k}\\right)}=\\prod_{k=1}^{K} \\mu_{k}^{m_{k}}Set derivative of $\\ln p(\\mathcal{D} \\mid \\boldsymbol{\\mu})$ with respect to $\\mu_k$ taking account of the constraint that the $\\mu_k$ must sum to one. This can be achieved by using a Lagrange multiplier $\\lambda$ and maximizing\n\\sum_{k=1}^{K} m_k \\ln \\mu_k + \\lambda (\\sum_{k=1}^{K}\\mu_k-1)Setting the derivative with respect to $\\mu_k$ to zero, we obtain\n\\mu_k = -m_k /\\lambda\\sum_k \\mu_k = 1\\sum_k-m_k /\\lambda = 1\\sum_k\\sum_{n} x_{n k}/\\lambda = 1\\lambda = -NObtain the maximum likelihood solution in the form\n\\mu_k^{ML} = \\frac{m_k}{N}Which is the fraction of the N observations for which $\\mathcal{x_k} = 1$\n","dateCreated":"2021-01-16T16:20:29+00:00","dateModified":"2021-01-16T16:41:42+00:00","datePublished":"2021-01-16T16:20:29+00:00","description":"","headline":"PRML_2.1-2.2","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"http://yoursite.com/2021/01/16/PRML-2-1-2-2/"},"publisher":{"@type":"Organization","name":"BY","sameAs":["https://github.com/Bernard-Yang","https://blog.csdn.net/weixin_38224810?spm=1011.2124.3001.5343","https://www.linkedin.com/in/bohao-yang-6a1372200/"]},"url":"http://yoursite.com/2021/01/16/PRML-2-1-2-2/","keywords":"ML, PRML"}</script>
+    <meta name="description" content="2.1 Binary Variablesp(x&#x3D;1 \mid \mu)&#x3D;\mu\operatorname{Bern}(x \mid \mu)&#x3D;\mu^{x}(1-\mu)^{1-x}\operatorname{E}[x]&#x3D;\mu\operatorname{Var}[x]&#x3D;\mu(1-\mu)data set $\mathcal{D} &#x3D; {x_{1}, \ldots, x_{N}}$ assume">
 <meta property="og:type" content="blog">
 <meta property="og:title" content="PRML_2.1-2.2">
 <meta property="og:url" content="http://yoursite.com/2021/01/16/PRML-2-1-2-2/index.html">
 <meta property="og:site_name" content="Bernard_Yang">
-<meta property="og:description" content="2.1 Binary Variablesp(x=1 \mid \mu)=\mu\operatorname{Bern}(x \mid \mu)=\mu^{x}(1-\mu)^{1-x}\operatorname{E}[x]=\mu\operatorname{Var}[x]=\mu(1-\mu)data set $\mathcal{D} = {x_{1}, \ldots, x_{N}}$ assume">
-<meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2021-01-16T16:41:42.935Z">
+<meta property="og:description" content="2.1 Binary Variablesp(x&#x3D;1 \mid \mu)&#x3D;\mu\operatorname{Bern}(x \mid \mu)&#x3D;\mu^{x}(1-\mu)^{1-x}\operatorname{E}[x]&#x3D;\mu\operatorname{Var}[x]&#x3D;\mu(1-\mu)data set $\mathcal{D} &#x3D; {x_{1}, \ldots, x_{N}}$ assume">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-01-16T16:20:29.000Z">
+<meta property="article:modified_time" content="2021-01-16T16:41:42.935Z">
+<meta property="article:author" content="BY">
+<meta property="article:tag" content="ML">
+<meta property="article:tag" content="PRML">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="PRML_2.1-2.2">
-<meta name="twitter:description" content="2.1 Binary Variablesp(x=1 \mid \mu)=\mu\operatorname{Bern}(x \mid \mu)=\mu^{x}(1-\mu)^{1-x}\operatorname{E}[x]=\mu\operatorname{Var}[x]=\mu(1-\mu)data set $\mathcal{D} = {x_{1}, \ldots, x_{N}}$ assume">
     
     
         
@@ -37,7 +38,9 @@
     
     
     <!--STYLES-->
-    <link rel="stylesheet" href="/assets/css/style-n6jvnksgjezzeyyja4rr6a6ck0kmjxpmoxmlqh9oc9qekonlnwygivf0suwe.min.css">
+    
+<link rel="stylesheet" href="/assets/css/style-n6jvnksgjezzeyyja4rr6a6ck0kmjxpmoxmlqh9oc9qekonlnwygivf0suwe.min.css">
+
     <!--STYLES END-->
     
 
@@ -180,7 +183,7 @@
                     
                         <a
                             class="sidebar-button-link "
-                            href="https://github.com/"
+                            href="https://github.com/Bernard-Yang"
                             
                                 target="_blank"
                             
@@ -196,15 +199,15 @@
                     
                         <a
                             class="sidebar-button-link "
-                            href="http://stackoverflow.com/users"
+                            href="https://blog.csdn.net/weixin_38224810?spm=1011.2124.3001.5343"
                             
                                 target="_blank"
                             
                             rel="noopener"
-                            title="Stack Overflow"
+                            title="global.csdn"
                         >
-                        <i class="sidebar-button-icon fab fa-stack-overflow" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Stack Overflow</span>
+                        <i class="sidebar-button-icon fab fa-blog" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">global.csdn</span>
                     </a>
             </li>
             
@@ -212,55 +215,7 @@
                     
                         <a
                             class="sidebar-button-link "
-                            href="https://twitter.com/"
-                            
-                                target="_blank"
-                            
-                            rel="noopener"
-                            title="Twitter"
-                        >
-                        <i class="sidebar-button-icon fab fa-twitter" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Twitter</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a
-                            class="sidebar-button-link "
-                            href="https://facebook.com/"
-                            
-                                target="_blank"
-                            
-                            rel="noopener"
-                            title="Facebook"
-                        >
-                        <i class="sidebar-button-icon fab fa-facebook" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Facebook</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a
-                            class="sidebar-button-link "
-                            href="https://plus.google.com/"
-                            
-                                target="_blank"
-                            
-                            rel="noopener"
-                            title="Google +"
-                        >
-                        <i class="sidebar-button-icon fab fa-google-plus" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Google +</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a
-                            class="sidebar-button-link "
-                            href="https://www.linkedin.com/profile/"
+                            href="https://www.linkedin.com/in/bohao-yang-6a1372200/"
                             
                                 target="_blank"
                             
@@ -269,20 +224,6 @@
                         >
                         <i class="sidebar-button-icon fab fa-linkedin" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">LinkedIn</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a
-                            class="sidebar-button-link "
-                            href="/mailto"
-                            
-                            rel="noopener"
-                            title="Mail"
-                        >
-                        <i class="sidebar-button-icon fa fa-envelope" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Mail</span>
                     </a>
             </li>
             
@@ -372,7 +313,7 @@
             <div class="post-footer-tags">
                 <span class="text-color-light text-small">TAGGED IN</span><br/>
                 
-    <a class="tag tag--primary tag--small t-link" href="/tags/ML/">ML</a> <a class="tag tag--primary tag--small t-link" href="/tags/PRML/">PRML</a>
+    <a class="tag tag--primary tag--small t-none-link" href="/tags/ML/" rel="tag">ML</a> <a class="tag tag--primary tag--small t-none-link" href="/tags/PRML/" rel="tag">PRML</a>
 
             </div>
         
@@ -396,7 +337,7 @@
                     
                 <a
                     class="post-action-btn btn btn--default tooltip--top"
-                    href="/2020/02/17/写于法定年龄伊始/"
+                    href="/2020/02/17/%E5%86%99%E4%BA%8E%E6%B3%95%E5%AE%9A%E5%B9%B4%E9%BE%84%E4%BC%8A%E5%A7%8B/"
                     data-tooltip="写于法定年龄伊始"
                     aria-label="NEXT: 写于法定年龄伊始"
                 >
@@ -508,7 +449,7 @@
                     
                 <a
                     class="post-action-btn btn btn--default tooltip--top"
-                    href="/2020/02/17/写于法定年龄伊始/"
+                    href="/2020/02/17/%E5%86%99%E4%BA%8E%E6%B3%95%E5%AE%9A%E5%B9%B4%E9%BE%84%E4%BC%8A%E5%A7%8B/"
                     data-tooltip="写于法定年龄伊始"
                     aria-label="NEXT: 写于法定年龄伊始"
                 >
@@ -661,16 +602,108 @@
 </div>
 
         
+            <div id="algolia-search-modal" class="modal-container">
+    <div class="modal">
+        <div class="modal-header">
+            <span class="close-button"><i class="fa fa-times"></i></span>
+            <a href="https://algolia.com" target="_blank" rel="noopener" class="searchby-algolia text-color-light link-unstyled">
+                <span class="searchby-algolia-text text-color-light text-small">by</span>
+                <img class="searchby-algolia-logo" src="/assets/images/logo-algolia-nebula-blue-full.svg">
+            </a>
+            <i class="search-icon fa fa-search"></i>
+            <form id="algolia-search-form">
+                <input type="text" id="algolia-search-input" name="search"
+                    class="form-control input--large search-input" placeholder="Search "
+                    />
+            </form>
+        </div>
+        <div class="modal-body">
+            <div class="no-result text-color-light text-center">no post found</div>
+            <div class="results">
+                
+                <div class="media">
+                    
+                    <div class="media-body">
+                        <a
+                            class="link-unstyled"
+                            href="http://yoursite.com/2020/02/17/%E5%86%99%E4%BA%8E%E6%B3%95%E5%AE%9A%E5%B9%B4%E9%BE%84%E4%BC%8A%E5%A7%8B/"
+                            aria-label=": 写于法定年龄伊始"
+                        >
+                            <h3 class="media-heading">写于法定年龄伊始</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    Feb 17, 2020
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+                <div class="media">
+                    
+                    <div class="media-body">
+                        <a
+                            class="link-unstyled"
+                            href="http://yoursite.com/2021/01/16/PRML-2-1-2-2/"
+                            aria-label=": PRML_2.1-2.2"
+                        >
+                            <h3 class="media-heading">PRML_2.1-2.2</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    Jan 16, 2021
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+            </div>
+        </div>
+        <div class="modal-footer">
+            <p class="results-count text-medium"
+                data-message-zero="no post found"
+                data-message-one="1 post found"
+                data-message-other="{n} posts found">
+                2 posts found
+            </p>
+        </div>
+    </div>
+</div>
+
+        
         
 <div id="cover" style="background-image:url('/assets/images/cover.jpg');"></div>
         <!--SCRIPTS-->
+
 <script src="/assets/js/script-m331ff355gemzstehu2kk8gv2rsjgy1bhls1j2yruidhxgub5js1kvld5lxa.min.js"></script>
+
 <!--SCRIPTS END-->
 
 
     
 
 
+
+    
+<script src="/assets/js/moment-with-locales.js"></script>
+
+    
+<script src="/assets/js/algoliasearch.js"></script>
+
+    <script>
+      var algoliaClient = algoliasearch('Z7A3XW4R2I', '12db1ad54372045549ef465881c17e743');
+      var algoliaIndex = algoliaClient.initIndex('my-hexo-blog');
+    </script>
 
 
     </body>

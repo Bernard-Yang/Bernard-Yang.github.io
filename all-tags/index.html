@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Bernard_Yang">
-    <title>Category: Machine Learning - Bernard_Yang</title>
+    <title>all-tags - Bernard_Yang</title>
     <meta name="author" content="BY">
     
     
@@ -15,12 +15,14 @@
             <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
         
     
-    <script type="application/ld+json">{}</script>
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"Website","@id":"http://yoursite.com","author":{"@type":"Person","name":"BY","sameAs":["https://github.com/Bernard-Yang","https://blog.csdn.net/weixin_38224810?spm=1011.2124.3001.5343","https://www.linkedin.com/in/bohao-yang-6a1372200/"]},"name":"Bernard_Yang","description":null,"url":"http://yoursite.com"}</script>
     <meta property="og:type" content="blog">
-<meta property="og:title" content="Bernard_Yang">
-<meta property="og:url" content="http://yoursite.com/categories/Machine-Learning/index.html">
+<meta property="og:title" content="all-tags">
+<meta property="og:url" content="http://yoursite.com/all-tags/index.html">
 <meta property="og:site_name" content="Bernard_Yang">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-11-24T18:24:48.732Z">
+<meta property="article:modified_time" content="2021-11-24T18:24:48.732Z">
 <meta property="article:author" content="BY">
 <meta name="twitter:card" content="summary">
     
@@ -247,92 +249,70 @@
                  class="
                         hasCoverMetaIn
                         ">
-                
-    <section class="postShorten-group main-content-wrap">
-    
-    
-    <article class="postShorten postShorten--thumbnailimg-bottom">
-        <div class="postShorten-wrap">
-            
-            <div class="postShorten-header">
-                <h1 class="postShorten-title">
-                    
-                        <a
-                            class="link-unstyled"
-                            href="/2021/01/16/PRML-2-1-2-2/"
-                            aria-label=": PRML_2.1-2.2"
-                        >
-                            PRML_2.1-2.2
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time datetime="2021-01-16T16:20:29+00:00">
-	
-		    Jan 16, 2021
-    	
-    </time>
-    
-        <span>in </span>
+                <div id="tags-archives" class="main-content-wrap">
+    <form id="filter-form" action="#">
+        <input name="tag" type="text" class="form-control input--xlarge" placeholder="Search tag" autofocus="autofocus">
+    </form>
+    <h4 class="archive-result text-color-base text-xlarge"
+        data-message-zero="no tag found"
+        data-message-one="1 tag found"
+        data-message-other="{n} tags found"></h4>
+
+        <section>
         
-    <a class="category-link" href="/categories/Machine-Learning/">Machine Learning</a>
-
-
-    
-</div>
-
-            </div>
-            
-                <div class="postShorten-content">
-                    <h1 id="2-1-Binary-Variables"><a href="#2-1-Binary-Variables" class="headerlink" title="2.1 Binary Variables"></a>2.1 Binary Variables</h1><script type="math/tex; mode=display">p(x=1 \mid \mu)=\mu</script><script type="math/tex; mode=display">\operatorname{Bern}(x \mid \mu)=\mu^{x}(1-\mu)^{1-x}</script><script type="math/tex; mode=display">\operatorname{E}[x]=\mu</script><script type="math/tex; mode=display">\operatorname{Var}[x]=\mu(1-\mu)</script><p>data set $\mathcal{D} = {x_{1}, \ldots, x_{N}}$</p>
-<p>assume observations are drawn independently from $p(x \mid \mu)$, so that</p>
-<script type="math/tex; mode=display">p(\mathcal{D} \mid \mu)=\prod_{n=1}^{N} p\left(x_{n} \mid \mu\right)=\prod_{n=1}^{N} \mu^{x_{n}}(1-\mu)^{1-x_{n}}</script><p>In frequentist setting, log liklyhood fuction of Bernoulli distribution is given by</p>
-<script type="math/tex; mode=display">\ln p(\mathcal{D} \mid \mu)=\sum_{n=1}^{N} \ln p(x_{n} \mid \mu)=\sum_{n=1}^{N}\left\{x_{n} \ln \mu+\left(1-x_{n}\right) \ln (1-\mu)\right\}</script><p>Set derivative of $\ln p(\mathcal{D} \mid \mu)$ with respect to $\mu$ equal to zero, obtained the maximum likelihood estimator</p>
-<script type="math/tex; mode=display">\mu_{ML} = \frac{1}{N}\sum_{n=1}^{N}x_{n}</script><h1 id="2-2-Multinomial-Variables"><a href="#2-2-Multinomial-Variables" class="headerlink" title="2.2 Multinomial Variables"></a>2.2 Multinomial Variables</h1><p>A variable that take $K=6$ states and a particular observation of the variable happens to correspond to the state where $x_{3}=1$, then x will be represented by</p>
-<script type="math/tex; mode=display">\boldsymbol{x}=(0,0, 1, 0, \ldots, 0)^{T}</script><p>Such vectors satisfy $\sum_{k=1}^{K}x_{k}=1$.</p>
-<p>Denote the probability of $x_{k}=1$ by the parameter $\mu_{k}$, the distribution of $\boldsymbol{x}$ is given</p>
-<script type="math/tex; mode=display">p(\boldsymbol{x} \mid \boldsymbol{\mu}) = \prod_{k=1}^{K}\mu_{k}^{x_{k}}</script><p>where $\boldsymbol{\mu} = (\mu_1, \ldots, \mu_{K})$, $\mu_{k}$ are considered to satisfy $\mu_{k}\geq 0$ and $\sum_{k} \mu_{k} = 1$ since they represent probabilities.</p>
-<p>The distribution $p(\boldsymbol{x} \mid \boldsymbol{\mu}) = \prod_{k=1}^{K}\mu_{k}^{x_{k}}$ can be regarded as a genealization of the Bernoulli distribution to more than two outcomes.</p>
-<p>Normalized</p>
-<script type="math/tex; mode=display">\sum_{\mathbf{x}} p(\mathbf{x} \mid \boldsymbol{\mu})=\sum_{k=1}^{K} \mu_{k}=1</script><p>Now consider a data set $\mathcal{D} of N independent observations $\mathbf{x_{1}}, \ldots, \mathbf{x_{N}}$. Likelihood function</p>
-<script type="math/tex; mode=display">p(\mathcal{D} \mid \boldsymbol{\mu})=\prod_{n=1}^{N} \prod_{k=1}^{K} \mu_{k}^{x_{n k}}=\prod_{k=1}^{K} \mu_{k}^{\left(\sum_{n} x_{n k}\right)}=\prod_{k=1}^{K} \mu_{k}^{m_{k}}</script><p>Set derivative of $\ln p(\mathcal{D} \mid \boldsymbol{\mu})$ with respect to $\mu_k$ taking account of the constraint that the $\mu_k$ must sum to one. This can be achieved by using a Lagrange multiplier $\lambda$ and maximizing</p>
-<script type="math/tex; mode=display">\sum_{k=1}^{K} m_k \ln \mu_k + \lambda (\sum_{k=1}^{K}\mu_k-1)</script><p>Setting the derivative with respect to $\mu_k$ to zero, we obtain</p>
-<script type="math/tex; mode=display">\mu_k = -m_k /\lambda</script><script type="math/tex; mode=display">\sum_k \mu_k = 1</script><script type="math/tex; mode=display">\sum_k-m_k /\lambda = 1</script><script type="math/tex; mode=display">\sum_k\sum_{n} x_{n k}/\lambda = 1</script><script type="math/tex; mode=display">\lambda = -N</script><p>Obtain the maximum likelihood solution in the form</p>
-<script type="math/tex; mode=display">\mu_k^{ML} = \frac{m_k}{N}</script><p>Which is the fraction of the N observations for which $\mathcal{x_k} = 1$</p>
-
+            <a class="tag tag--primary tag--small" href="#ML-list" data-tag="ml">
+                ML
+            </a>
+        
+            <a class="tag tag--primary tag--small" href="#PRML-list" data-tag="prml">
+                PRML
+            </a>
+        
+    </section>
+    <section class="boxes">
+        
+            <div id="ML-list" class="archive box" data-tag="ml">
+                <h4 class="archive-title">
+                    <a class="link-unstyled" href="/tags/ML">
+                        ML (1)
+                    </a>
+                </h4>
+                <ul class="archive-posts">
                     
-                        
-
-
-                    
-                    
-                        <p>
-                            <a
-                                href="/2021/01/16/PRML-2-1-2-2/#post-footer"
-                                class="postShorten-excerpt_link link"
-                                aria-label=""
-                            >
-                                Comment and share
+                        <li class="archive-post">
+                            <a class="archive-post-title" href="/2021/01/16/PRML-2-1-2-2/">
+                                PRML_2.1-2.2
                             </a>
-                        </p>
+                            <span class="archive-post-date">
+                                 - jan 16, 2021
+                            </span>
+                        </li>
                     
-                </div>
-            
-        </div>
+                </ul>
+            </div>
         
-    </article>
-    
-    <div class="pagination-bar">
-    <ul class="pagination">
+            <div id="PRML-list" class="archive box" data-tag="prml">
+                <h4 class="archive-title">
+                    <a class="link-unstyled" href="/tags/PRML">
+                        PRML (1)
+                    </a>
+                </h4>
+                <ul class="archive-posts">
+                    
+                        <li class="archive-post">
+                            <a class="archive-post-title" href="/2021/01/16/PRML-2-1-2-2/">
+                                PRML_2.1-2.2
+                            </a>
+                            <span class="archive-post-date">
+                                 - jan 16, 2021
+                            </span>
+                        </li>
+                    
+                </ul>
+            </div>
         
-        
-        <li class="pagination-number">page 1 of 1</li>
-    </ul>
+    </section>
 </div>
-
-</section>
-
-
 
                 <footer id="footer" class="main-content-wrap">
     <span class="copyrights">

@@ -2,14 +2,15 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle:
 
 profile:
   align: right
   image: pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>杨 博颢</p>
+    <p>Bohao Yang (杨 博颢)</p>
+    <p>Ph.D Student</p>
     <p>University of Manchester</p>
 
 news: true # includes a list of news items

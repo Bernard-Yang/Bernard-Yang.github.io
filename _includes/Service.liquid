@@ -1,27 +1,27 @@
-<div class="Service">
-  {% if site.Service != blank %}
-    {% assign Service_size = site.Service | size %}
+<div class="service">
+  {% if site.service != blank %}
+    {% assign service_size = site.service | size %}
     <div
       class="table-responsive"
-      {% if include.limit and site.Service.scrollable and Service_size > 3 %}
+      {% if include.limit and site.service.scrollable and service_size > 3 %}
         style="max-height: 60vw"
       {% endif %}
     >
       <table class="table table-sm table-borderless">
-        {% assign Service = site.Service | reverse %}
-        {% if include.limit and site.Service.limit %}
-          {% assign Service_limit = site.Service.limit %}
+        {% assign service = site.service | reverse %}
+        {% if include.limit and site.service.limit %}
+          {% assign service_limit = site.service.limit %}
         {% else %}
-          {% assign Service_limit = Service_size %}
+          {% assign service_limit = service_size %}
         {% endif %}
-        {% for item in Service limit: Service_limit %}
+        {% for item in service limit: service_limit %}
           <tr>
             <th scope="row" style="width: 20%">{{ item.date | date: '%b %d, %Y' }}</th>
             <td>
               {% if item.inline %}
                 {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
               {% else %}
-                <a class="Service-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+                <a class="service-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
               {% endif %}
             </td>
           </tr>
@@ -29,6 +29,6 @@
       </table>
     </div>
   {% else %}
-    <p>No Service so far...</p>
+    <p>No service so far...</p>
   {% endif %}
 </div>

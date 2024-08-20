@@ -57,11 +57,11 @@ layout: default
     {% endif %}
 
     <!-- Latest posts -->
-    {% if site.Service.enabled %}
+    {% if site.service.enabled %}
       <h2>
-        <a href="{{ '/Service/' | relative_url }}" style="color: inherit">Service</a>
+        <a href="{{ '/service/' | relative_url }}" style="color: inherit">service</a>
       </h2>
-      {% include Service.liquid %}
+      {% include service.liquid %}
     {% endif %}
 
     <!-- Selected papers -->

@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Service
-permalink: /Service/
+title: service
+permalink: /service/
 ---
 
-{% include Service.liquid %}
+{% include service.liquid %}
+

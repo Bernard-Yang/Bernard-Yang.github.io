@@ -12,6 +12,7 @@ profile:
     <p>Bohao Yang (杨 博颢)</p>
     <p>Ph.D Student</p>
     <p>University of Manchester</p>
+    <p> Email: bohaoyang217@gmail.com </p>
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"

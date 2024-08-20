@@ -3,113 +3,174 @@
 
 @string{aps = {American Physical Society,}}
 
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
+@misc{yang2024craftingcustomisablecharactersllms,
+      title={Crafting Customisable Characters with LLMs: Introducing SimsChat, a Persona-Driven Role-Playing Agent Framework}, 
+      author={Bohao Yang and Dong Liu and Chen Tang and Chenghao Xiao and Kun Zhao and Chao Li and Lin Yuan and Guang Yang and Lanxiao Huang and Chenghua Lin},
+      year={2024},
+      eprint={2406.17962},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2406.17962}, 
 }
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+@misc{zhao2024xraysimpleradiologyreport,
+      title={X-ray Made Simple: Radiology Report Generation and Evaluation with Layman's Terms}, 
+      author={Kun Zhao and Chenghao Xiao and Chen Tang and Bohao Yang and Kai Ye and Noura Al Moubayed and Liang Zhan and Chenghua Lin},
+      year={2024},
+      eprint={2406.17911},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2406.17911}, 
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
+@inproceedings{zhao-etal-2024-slide,
+    title = "{SLIDE}: A Framework Integrating Small and Large Language Models for Open-Domain Dialogues Evaluation",
+    author = "Zhao*, Kun  and
+      Yang*, Bohao  and
+      Tang, Chen  and
+      Lin, Chenghua  and
+      Zhan, Liang",
+    editor = "Ku, Lun-Wei  and
+      Martins, Andre  and
+      Srikumar, Vivek",
+    booktitle = "Findings of the Association for Computational Linguistics ACL 2024",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand and virtual meeting",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.findings-acl.911",
+    pages = "15421--15435",
+    abstract = "The long-standing one-to-many problem of gold standard responses in open-domain dialogue systems presents challenges for automatic evaluation metrics. Though prior works have demonstrated some success by applying powerful Large Language Models (LLMs), existing approaches still struggle with the one-to-many problem, and exhibit subpar performance in domain-specific scenarios. We assume the commonsense reasoning biases within LLMs may hinder their performance in domain-specific evaluations. To address both issues, we propose a novel framework SLIDE (Small and Large Integrated for Dialogue Evaluation), that leverages both a small, specialised model (SLM), and LLMs for the evaluation of open domain dialogues. Our approach introduces several techniques: (1) Contrastive learning to differentiate between robust and non-robust response embeddings; (2) A novel metric for semantic sensitivity that combines embedding cosine distances with similarity learned through neural networks, and (3) A strategy for incorporating the evaluation results from both the SLM and LLMs. Our empirical results demonstrate that our approach achieves state-of-the-art performance in both the classification and evaluation tasks, and additionally the SLIDE evaluator exhibits better correlation with human judgements. Our code is available at https://github.com/hegehongcha/SLIDE-ACL2024.",
+}
+
+@INPROCEEDINGS{10447688,
+  author={Yang, Bohao and Tang, Chen and Lin, Chenghua},
+  booktitle={ICASSP 2024 - 2024 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, 
+  title={Improving Medical Dialogue Generation with Abstract Meaning Representations}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={11826-11830},
+  keywords={Terminology;Telemedicine;Source coding;Semantics;Unified modeling language;Medical services;Signal processing;Abstract Meaning Representation;Dialogue Generation;Language Model;Artificial Intelligence;AMR Graph},
+  doi={10.1109/ICASSP48485.2024.10447688}}
+
+
+@misc{yang2024emphasisingstructuredinformationintegrating,
+      title={Emphasising Structured Information: Integrating Abstract Meaning Representation into LLMs for Enhanced Open-Domain Dialogue Evaluation}, 
+      author={Bohao Yang* and Kun Zhao* and Chen Tang and Dong Liu and Liang Zhan and Chenghua Lin},
+      year={2024},
+      eprint={2404.01129},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2404.01129}, 
+
+@inproceedings{wu-etal-2024-scimmir,
+    title = "{S}ci{MMIR}: Benchmarking Scientific Multi-modal Information Retrieval",
+    author = "Wu, Siwei  and
+      Li, Yizhi  and
+      Zhu, Kang  and
+      Zhang, Ge  and
+      Liang, Yiming  and
+      Ma, Kaijing  and
+      Xiao, Chenghao  and
+      Zhang, Haoran  and
+      Yang, Bohao  and
+      Chen, Wenhu  and
+      Huang, Wenhao  and
+      Al Moubayed, Noura  and
+      Fu, Jie  and
+      Lin, Chenghua",
+    editor = "Ku, Lun-Wei  and
+      Martins, Andre  and
+      Srikumar, Vivek",
+    booktitle = "Findings of the Association for Computational Linguistics ACL 2024",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand and virtual meeting",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.findings-acl.746",
+    pages = "12560--12574",
+    abstract = "Multi-modal information retrieval (MMIR) is a rapidly evolving field where significant progress has been made through advanced representation learning and cross-modality alignment research, particularly in image-text pairing.However, current benchmarks for evaluating MMIR performance on image-text pairings overlook the scientific domain, which has a notable gap with the generic data since the caption of scientific charts and tables usually describes the analysis of experimental results or scientific principles in contrast to human activity or scenery depicted in generic images.To bridge this gap, we develop a \textbf{sci}entific domain-specific \textbf{MMIR} benchmark (\textbf{SciMMIR}) by leveraging open-access research paper corpora to extract data relevant to the scientific domain. This benchmark comprises \textbf{530K} meticulously curated image-text pairs, extracted from figures and tables with detailed captions from scientific documents.We further annotate the image-text pairs with a two-level subset-subcategory hierarchy to facilitate a more comprehensive evaluation of the baselines. We conduct zero-shot and fine-tuned evaluations on prominent multi-modal image-captioning and visual language models, such as CLIP, BLIP, and BLIP-2.Our findings offer critical insights for MMIR in the scientific domain, including the impact of pre-training and fine-tuning settings and the effects of different visual and textual encoders.",
+}
+
+
+}
+@inproceedings{yang-etal-2024-effective,
+    title = "Effective Distillation of Table-based Reasoning Ability from {LLM}s",
+    author = "Yang, Bohao  and
+      Tang, Chen  and
+      Zhao, Kun  and
+      Xiao, Chenghao  and
+      Lin, Chenghua",
+    editor = "Calzolari, Nicoletta  and
+      Kan, Min-Yen  and
+      Hoste, Veronique  and
+      Lenci, Alessandro  and
+      Sakti, Sakriani  and
+      Xue, Nianwen",
+    booktitle = "Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)",
+    month = may,
+    year = "2024",
+    address = "Torino, Italia",
+    publisher = "ELRA and ICCL",
+    url = "https://aclanthology.org/2024.lrec-main.492",
+    pages = "5538--5550",
+    abstract = "Large Language Models (LLMs) have demonstrated remarkable performance across a wide range of natural language processing tasks. However, their enormous parameter size and extremely high requirements for compute power pose challenges for their practical deployment. Recent research has revealed that specific capabilities of LLMs, such as numerical reasoning, can be transferred to smaller models through distillation. Some studies explore the potential of leveraging LLMs to perform table-based reasoning. However, there has been no prior work focusing on table reasoning skills in smaller models specifically tailored for scientific table-to-text generation tasks. In this paper, we propose a novel table-based reasoning distillation approach, with the aim of distilling LLMs into tailored smaller models. Our experimental results have shown that a 220 million parameter model (Flan-T5-base) fine-tuned using distilled data, not only achieves a significant improvement compared to traditionally fine-tuned baselines, but also surpasses specific LLMs on a scientific table-to-text generation dataset. Our code is available at https://github.com/Bernard-Yang/DistillTableCoT.",
+}
+
+@inproceedings{zhao-etal-2023-evaluating,
+    title = "Evaluating Open-Domain Dialogues in Latent Space with Next Sentence Prediction and Mutual Information",
+    author = "Zhao*, Kun  and
+      Yang*, Bohao  and
+      Lin, Chenghua  and
+      Rong, Wenge  and
+      Villavicencio, Aline  and
+      Cui, Xiaohui",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-long.33",
+    doi = "10.18653/v1/2023.acl-long.33",
+    pages = "562--574",
+    abstract = "The long-standing one-to-many issue of the open-domain dialogues poses significant challenges for automatic evaluation methods, i.e., there may be multiple suitable responses which differ in semantics for a given conversational context. To tackle this challenge, we propose a novel learning-based automatic evaluation metric (CMN), which can robustly evaluate open-domain dialogues by augmenting Conditional Variational Autoencoders (CVAEs) with a Next Sentence Prediction (NSP) objective and employing Mutual Information (MI) to model the semantic similarity of text in the latent space. Experimental results on two open-domain dialogue datasets demonstrate the superiority of our method compared with a wide range of baselines, especially in handling responses which are distant to the {``}golden{''} reference responses in semantics.",
+}
+
+@inproceedings{li-etal-2022-herb,
+    title = "{HERB}: Measuring Hierarchical Regional Bias in Pre-trained Language Models",
+    author = "Li*, Yizhi  and
+      Zhang*, Ge  and
+      Yang, Bohao  and
+      Lin, Chenghua  and
+      Ragni, Anton  and
+      Wang, Shi  and
+      Fu, Jie",
+    editor = "He, Yulan  and
+      Ji, Heng  and
+      Li, Sujian  and
+      Liu, Yang  and
+      Chang, Chua-Hui",
+    booktitle = "Findings of the Association for Computational Linguistics: AACL-IJCNLP 2022",
+    month = nov,
+    year = "2022",
+    address = "Online only",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.findings-aacl.32",
+    pages = "334--346",
+    abstract = "Fairness has become a trending topic in natural language processing (NLP) and covers biases targeting certain social groups such as genders and religions. Yet regional bias, another long-standing global discrimination problem, remains unexplored still. Consequently, we intend to provide a study to analyse the regional bias learned by the pre-trained language models (LMs) that are broadly used in NLP tasks. While verifying the existence of regional bias in LMs, we find that the biases on regional groups can be largely affected by the corresponding geographical clustering. We accordingly propose a hierarchical regional bias evaluation method (HERB) utilising the information from the sub-region clusters to quantify the bias in the pre-trained LMs. Experiments show that our hierarchical metric can effectively evaluate the regional bias with regard to comprehensive topics and measure the potential regional bias that can be propagated to downstream tasks. Our codes are available at \url{https://github.com/Bernard-Yang/HERB}.",
+}
+
+@ARTICLE{10099450,
+  author={Millwood, Owen and Miskelly, Jack and Yang, Bohao and Gope, Prosanta and Kavun, Elif Bilge and Lin, Chenghua},
+  journal={IEEE Transactions on Information Forensics and Security}, 
+  title={PUF-Phenotype: A Robust and Noise-Resilient Approach to Aid Group-Based Authentication With DRAM-PUFs Using Machine Learning}, 
+  year={2023},
   volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
-}
-
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation={* Example use of superscripts<br>† Albert Einstein},
-  selected={true},
-  inspirehep_id = {3255}
-}
-
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@Article{einstein1905photoelectriceffect,
-  bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
-}
-
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
-}
+  number={},
+  pages={2451-2465},
+  keywords={Authentication;Security;Noise measurement;Feature extraction;Random access memory;Noise reduction;Data models;Physically unclonable functions (PUF);PUF-phenotype;DRAM-PUF;machine learning;error correction},
+  doi={10.1109/TIFS.2023.3266624}}

@@ -56,6 +56,14 @@ layout: default
       {% include latest_posts.liquid %}
     {% endif %}
 
+    <!-- Latest posts -->
+    {% if site.Service.enabled %}
+      <h2>
+        <a href="{{ '/Service/' | relative_url }}" style="color: inherit">Service</a>
+      </h2>
+      {% include Service.liquid %}
+    {% endif %}
+
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h2>

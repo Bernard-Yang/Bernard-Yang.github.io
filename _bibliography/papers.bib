@@ -3,21 +3,22 @@
 
 @string{aps = {American Physical Society,}}
 
-@misc{yang2024craftingcustomisablecharactersllms,
+@inproceedings{yang2024craftingcustomisablecharactersllms,
       title={Crafting Customisable Characters with LLMs: Introducing SimsChat, a Persona-Driven Role-Playing Agent Framework}, 
       author={Bohao Yang and Dong Liu and Chen Tang and Chenghao Xiao and Kun Zhao and Chao Li and Lin Yuan and Guang Yang and Lanxiao Huang and Chenghua Lin},
       year={2024},
-      eprint={2406.17962},
+      arxiv={2406.17962},
       archivePrefix={arXiv},
       primaryClass={cs.CL},
       url={https://arxiv.org/abs/2406.17962}, 
+      selected={true}
 }
 
-@misc{zhao2024xraysimpleradiologyreport,
+@inproceedings{zhao2024xraysimpleradiologyreport,
       title={X-ray Made Simple: Radiology Report Generation and Evaluation with Layman's Terms}, 
       author={Kun Zhao and Chenghao Xiao and Chen Tang and Bohao Yang and Kai Ye and Noura Al Moubayed and Liang Zhan and Chenghua Lin},
       year={2024},
-      eprint={2406.17911},
+      arxiv={2406.17911},
       archivePrefix={arXiv},
       primaryClass={cs.CL},
       url={https://arxiv.org/abs/2406.17911}, 
@@ -41,6 +42,7 @@
     url = "https://aclanthology.org/2024.findings-acl.911",
     pages = "15421--15435",
     abstract = "The long-standing one-to-many problem of gold standard responses in open-domain dialogue systems presents challenges for automatic evaluation metrics. Though prior works have demonstrated some success by applying powerful Large Language Models (LLMs), existing approaches still struggle with the one-to-many problem, and exhibit subpar performance in domain-specific scenarios. We assume the commonsense reasoning biases within LLMs may hinder their performance in domain-specific evaluations. To address both issues, we propose a novel framework SLIDE (Small and Large Integrated for Dialogue Evaluation), that leverages both a small, specialised model (SLM), and LLMs for the evaluation of open domain dialogues. Our approach introduces several techniques: (1) Contrastive learning to differentiate between robust and non-robust response embeddings; (2) A novel metric for semantic sensitivity that combines embedding cosine distances with similarity learned through neural networks, and (3) A strategy for incorporating the evaluation results from both the SLM and LLMs. Our empirical results demonstrate that our approach achieves state-of-the-art performance in both the classification and evaluation tasks, and additionally the SLIDE evaluator exhibits better correlation with human judgements. Our code is available at https://github.com/hegehongcha/SLIDE-ACL2024.",
+    selected={true}
 }
 
 @INPROCEEDINGS{10447688,
@@ -52,17 +54,21 @@
   number={},
   pages={11826-11830},
   keywords={Terminology;Telemedicine;Source coding;Semantics;Unified modeling language;Medical services;Signal processing;Abstract Meaning Representation;Dialogue Generation;Language Model;Artificial Intelligence;AMR Graph},
-  doi={10.1109/ICASSP48485.2024.10447688}}
+  doi={10.1109/ICASSP48485.2024.10447688}
+  selected={true}
+  }
 
 
-@misc{yang2024emphasisingstructuredinformationintegrating,
+@inproceedings{yang2024emphasisingstructuredinformationintegrating,
       title={Emphasising Structured Information: Integrating Abstract Meaning Representation into LLMs for Enhanced Open-Domain Dialogue Evaluation}, 
       author={Bohao Yang* and Kun Zhao* and Chen Tang and Dong Liu and Liang Zhan and Chenghua Lin},
       year={2024},
-      eprint={2404.01129},
+      arxiv={2404.01129},
       archivePrefix={arXiv},
       primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2404.01129}, 
+      url={https://arxiv.org/abs/2404.01129},
+      selected={true}
+  } 
 
 @inproceedings{wu-etal-2024-scimmir,
     title = "{S}ci{MMIR}: Benchmarking Scientific Multi-modal Information Retrieval",
@@ -116,6 +122,7 @@
     url = "https://aclanthology.org/2024.lrec-main.492",
     pages = "5538--5550",
     abstract = "Large Language Models (LLMs) have demonstrated remarkable performance across a wide range of natural language processing tasks. However, their enormous parameter size and extremely high requirements for compute power pose challenges for their practical deployment. Recent research has revealed that specific capabilities of LLMs, such as numerical reasoning, can be transferred to smaller models through distillation. Some studies explore the potential of leveraging LLMs to perform table-based reasoning. However, there has been no prior work focusing on table reasoning skills in smaller models specifically tailored for scientific table-to-text generation tasks. In this paper, we propose a novel table-based reasoning distillation approach, with the aim of distilling LLMs into tailored smaller models. Our experimental results have shown that a 220 million parameter model (Flan-T5-base) fine-tuned using distilled data, not only achieves a significant improvement compared to traditionally fine-tuned baselines, but also surpasses specific LLMs on a scientific table-to-text generation dataset. Our code is available at https://github.com/Bernard-Yang/DistillTableCoT.",
+    selected={true}
 }
 
 @inproceedings{zhao-etal-2023-evaluating,
@@ -138,6 +145,7 @@
     doi = "10.18653/v1/2023.acl-long.33",
     pages = "562--574",
     abstract = "The long-standing one-to-many issue of the open-domain dialogues poses significant challenges for automatic evaluation methods, i.e., there may be multiple suitable responses which differ in semantics for a given conversational context. To tackle this challenge, we propose a novel learning-based automatic evaluation metric (CMN), which can robustly evaluate open-domain dialogues by augmenting Conditional Variational Autoencoders (CVAEs) with a Next Sentence Prediction (NSP) objective and employing Mutual Information (MI) to model the semantic similarity of text in the latent space. Experimental results on two open-domain dialogue datasets demonstrate the superiority of our method compared with a wide range of baselines, especially in handling responses which are distant to the {``}golden{''} reference responses in semantics.",
+    selected={true}
 }
 
 @inproceedings{li-etal-2022-herb,

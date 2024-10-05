@@ -19,4 +19,8 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am a second-year Ph.D student at The University of Manchester, supervised by [Prof. Chenghua Lin](https://chenghualin.wordpress.com/). My research area mainly focus on Natural Language Processing, especially the Natural Language Generation, including Dialogue generation and evaluation, Table understanding and LLM.
+I am a final-year Ph.D student at The University of Manchester, supervised by [Prof. Chenghua Lin](https://chenghualin.wordpress.com/). My research area mainly focus on Natural Language Processing, especially the Natural Language Generation, including Dialogue generation and evaluation, Table understanding and LLM.
+
+Academic Service: Reviewer at ACL, EACL, EMNLP, INLG.
+
+

@@ -13,13 +13,6 @@
       <meta http-equiv="refresh" content="3; url={{ redirect }}">
     {% endif %}
     {% include head.liquid %}
-    <style>
-      /* 调整 ClustrMaps 图标大小 */
-      #clstr_globe {
-        transform: scale(0.2); /* 缩小图标至 50% */
-        transform-origin: center; /* 设置缩放的中心点 */
-      }
-    </style>
   </head>
 
   <!-- Body -->
@@ -81,6 +74,6 @@
     {% include scripts/back_to_top.liquid %}
     {% include scripts/search.liquid %}
 
-    <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=VbdauLNFmZ7n0L862oflT97mEEJNusrxMaZ6hYEmo4o"></script>
+    <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=VbdauLNFmZ7n0L862oflT97mEEJNusrxMaZ6hYEmo4o&cl=ffffff&w=a"></script>
   </body>
 </html>

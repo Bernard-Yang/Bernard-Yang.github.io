@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Two paper accepted to ACL 2024 Findings.
+Two paper accepted to ACL 2024.

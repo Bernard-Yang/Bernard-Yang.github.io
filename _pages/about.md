@@ -19,11 +19,15 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am a final-year Ph.D student at The University of Manchester, supervised by [Prof. Chenghua Lin](https://chenghua-lin.github.io/). My research area mainly focus on Natural Language Processing, especially the Natural Language Generation, including Dialogue generation and evaluation, Table understanding and LLM.
+I am a final-year Ph.D student at The University of Manchester, supervised by [Prof. Chenghua Lin](https://chenghua-lin.github.io/). My research area mainly focus on Natural Language Processing, especially the Natural Language Generation, including Dialogue generation and evaluation, (Multimodal) Table understanding and reasoning, LLM and MLLM.
+
+📢  **<font color=red>I am currently on the job market and expect to graduate in Dec 2025. I am open to opportunities in both academic and industrial positions. Please feel free to contact me if you have suitable openings!</font>**
 
 Academic Service: 
 
-Program Committee: INLG.
+Area Chair: ARR - July 2025.
+
+Program Committee: INLG, AAAI.
 
 Conference Reviewer: ACL, EACL, EMNLP, INLG.
 

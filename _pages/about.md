@@ -6,7 +6,7 @@ subtitle:
 
 profile:
   align: right
-  image: pic.jpg
+  image: 微信图片_20251120144405_550_39.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Bohao Yang (杨 博颢)</p>
